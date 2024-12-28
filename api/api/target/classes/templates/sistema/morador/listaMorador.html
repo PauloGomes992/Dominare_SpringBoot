@@ -58,24 +58,40 @@
               <tr>
                 <th>ID</th>
                 <th>Nome</th>
+                <th>Data de nascimento</th>
                 <th>CPF</th>
                 <th>Telefone</th>
-                <th>Data de nascimento</th>
                 <th>Bloco</th>
                 <th>Apartamento</th>
                 <th>Relação</th>
+                <th>Ações</th>
               </tr>
             </thead>
             <tbody>
               <tr th:each="pessoa : ${pessoas}">
                 <td th:text="${pessoa.id}"></td>
                 <td th:text="${pessoa.nome}"></td>
+                <td th:text="${pessoa.dataDeNascimento}"></td>
                 <td th:text="${pessoa.cpf}"></td>
                 <td th:text="${pessoa.telefone}"></td>
-                <td th:text="${pessoa.dataDeNascimento}"></td>
                 <td th:text="${pessoa.bloco}"></td>
                 <td th:text="${pessoa.numeroApartamento}"></td>
                 <td th:text="${pessoa.relacao}"></td>
+                <td>
+                  <!-- Window. (classe java para rediricionamento após um click)  -->
+                  <button class="btn btn-primary" type="button"
+                    th:onclick="'window.location.href=\'/sistema/morador/atualizar/' + ${pessoa.id} + '\''"><i
+                      class="bi bi-pencil-square"></i></button>
+
+                  <form th:action="@{/sistema/morador/delete/{id}(id=${pessoa.id})}" method="post"
+                    style="display: inline;">
+                    <input type="hidden" name="_method" value="delete">
+                    <button class="btn btn-primary" type="submit"><i class="bi bi-trash"></i> </button>
+
+                    
+
+                  </form>
+                </td>
               </tr>
             </tbody>
           </table>
