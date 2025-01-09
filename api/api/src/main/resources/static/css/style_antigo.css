@@ -46,7 +46,7 @@ footer i{
 
 .main {
     background-image: url("img/fundo.png");
-    background-size: center;
+    background-size: cover;
     flex: 1;
     display: flex;
     /* justify-content: center; */

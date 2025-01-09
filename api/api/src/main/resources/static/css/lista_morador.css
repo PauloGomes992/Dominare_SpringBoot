@@ -27,6 +27,10 @@ html {
   margin-right: 20px;
 }
 
+.nav-superior a:visited{
+  color: var(--cor2);
+}
+
 @media (min-width: 576px) {
   nav i {
     font-size: 50px;
@@ -55,7 +59,7 @@ footer i {
 
 .main {
   background-image: url("../img/fundo.png");
-  background-size: center;
+  background-size: cover;
   flex: 1;
   display: flex;
 }

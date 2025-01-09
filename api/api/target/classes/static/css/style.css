@@ -1,36 +1,54 @@
 :root {
   --cor1: rgba(128, 128, 128, 0.938);
   --cor2: rgb(19, 1, 1);
-  --cor3: rgb(238, 238, 238);
+  --cor3: rgba(238, 238, 238, 0.61);
+
 }
 
+body,
+html {
+  min-height: 100% !important;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding-bottom: 50px;
+  background-color: var(--cor3) !important;
 
+}
 
+.topo{
+  background-color: var(--cor2) !important;
+
+}
 
 .navbar {
   color: var(--cor2);
-  background-color: var(--cor1);
+  background-color: var(--cor3) ;
 }
+
+
 
 @media (max-width: 600px) {
   .div-icons {
     font-size: 30px !important;
   }
-  .cards_p{
+  .cards_p {
     font-size: 15px;
   }
 }
 
-.img_principal_p{
+.img_principal_p {
   max-height: 200px;
 }
 
-.img_principal_g{
+.img_principal_g {
   max-height: 500px;
 }
 
-.div-cartoes{
-    padding-bottom: 15px !important;
+.div-cartoes {
+  padding-bottom: 15px !important;
+
 }
 
 .div-socialmedia i {
@@ -53,16 +71,10 @@
 footer {
   background-color: var(--cor2);
   color: var(--cor3);
-}
-
-footer i {
-  color: var(--cor3);
-  justify-self: end;
-}
-
-footer {
-  background-color: var(--cor2);
-  color: var(--cor3);
+  position: fixed;
+  bottom:0;
+    left:0;
+  min-width: 100%;
 }
 
 footer i {
