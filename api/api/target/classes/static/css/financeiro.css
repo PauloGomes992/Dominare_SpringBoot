@@ -22,6 +22,8 @@ nav {
   transition: background-color 0.3s ease, width 0.3s ease;
 }
 
+
+
 footer {
   background-color: var(--cor2);
   color: var(--cor3);
@@ -85,8 +87,6 @@ button.bg-hover:hover {
   background-size: cover;
   flex: 1;
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 
 .nav-superior {
@@ -115,6 +115,12 @@ button.bg-hover:hover {
   border-radius: 8px;
 }
 
+.nav-lateral {
+  background-image: linear-gradient(#eeeeee, transparent);
+  min-width: 10%;
+}
+
+
 .button button {
   border-radius: 10px;
   border: none;
@@ -129,10 +135,11 @@ button.bg-hover:hover {
   background-color: var(--cor3);
   box-shadow: 0 8px 4px 8px rgba(0, 0, 0, 0.158);
   border-radius: 10px;
+  max-width: 60%;
 }
 
 .tabela {
-  width: 75vw; /* Define o tamanho da tabela em relação ao container */
+  width: 90%; /* Define o tamanho da tabela em relação ao container */
   margin: 20px auto; /* Centraliza a tabela */
   border: 2px solid #ddd; /* Borda para a tabela */
   border-radius: 10px; /* Arredondamento nas bordas */

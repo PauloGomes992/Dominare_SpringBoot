@@ -55,6 +55,12 @@ footer i {
   margin-right: 20px;
 }
 
+.nav-lateral {
+  background-image: linear-gradient(#eeeeee, transparent);
+  min-width: 10%;
+}
+
+
 .nav-superior a:visited{
     color: var(--cor2);
 }
@@ -186,6 +192,13 @@ footer i {
   margin: 5px 0;
 }
 
+
+.mensagem {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+  display: none;
+}
 /* Footer medias sociais */
 
 .div-socialmedia i {

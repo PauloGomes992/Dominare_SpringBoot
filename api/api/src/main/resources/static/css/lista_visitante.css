@@ -67,6 +67,7 @@ footer i {
 /* Navbar Lateral */
 .nav-lateral {
   background-image: linear-gradient(#eeeeee, transparent);
+  min-width: 10%;
 }
 
 .nav-item {

@@ -45,6 +45,12 @@ body, html {
 
 }
 
+.nav-lateral {
+    background-image: linear-gradient(#eeeeee, transparent);
+    min-width: 10%;
+  }
+  
+
 .redefinir{
     display: block;
     margin-top: -10px;

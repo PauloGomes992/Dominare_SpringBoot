@@ -27,6 +27,12 @@ html {
   background-color: var(--cor3) ;
 }
 
+.nav-lateral {
+  background-image: linear-gradient(#eeeeee, transparent);
+  min-width: 10%;
+}
+
+
 
 
 @media (max-width: 600px) {

@@ -61,6 +61,12 @@ footer i {
   border-radius: 8px;
 }
 
+.nav-lateral {
+  background-image: linear-gradient(#eeeeee, transparent);
+  min-width: 10%;
+}
+
+
 /* Configuração do container principal */
 .avisos {
   display: flex;

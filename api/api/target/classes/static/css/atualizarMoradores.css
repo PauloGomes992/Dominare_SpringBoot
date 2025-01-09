@@ -25,10 +25,9 @@ html {
 .nav-superior i {
   font-size: 50px;
   margin-right: 20px;
-  
 }
-.nav-superior a:visited{
-    color: var(--cor2);
+.nav-superior a:visited {
+  color: var(--cor2);
 }
 
 @media (min-width: 576px) {
@@ -67,6 +66,7 @@ footer i {
 /* Navbar Lateral */
 .nav-lateral {
   background-image: linear-gradient(#eeeeee, transparent);
+  min-width: 10%;
 }
 
 .nav-item {

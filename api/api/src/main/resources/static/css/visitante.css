@@ -50,6 +50,12 @@ footer i {
   margin-right: 20px;
 }
 
+.nav-lateral {
+  background-image: linear-gradient(#eeeeee, transparent);
+  min-width: 10%;
+}
+
+
 .nav-superior a:visited{
     color: var(--cor2);
 }
