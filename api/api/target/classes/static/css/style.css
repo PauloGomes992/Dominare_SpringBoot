@@ -1,8 +1,7 @@
 :root {
-  --cor1: rgba(128, 128, 128, 0.938);
+  --cor1: rgb(161, 218, 234);
   --cor2: rgb(19, 1, 1);
-  --cor3: rgba(238, 238, 238, 0.61);
-
+  --cor3: rgb(109, 174, 202);
 }
 
 body,
@@ -12,28 +11,21 @@ html {
   display: flex;
   flex-direction: column;
   padding: 0;
-  padding-bottom: 50px;
+  background: linear-gradient(
+    135deg,
+    rgba(161, 218, 234, 1),
+    rgba(161, 218, 234, 0.5),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+
+.topo {
   background-color: var(--cor3) !important;
-
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 50px;
 }
-
-.topo{
-  background-color: var(--cor2) !important;
-
-}
-
-.navbar {
-  color: var(--cor2);
-  background-color: var(--cor3) ;
-}
-
-.nav-lateral {
-  background-image: linear-gradient(#eeeeee, transparent);
-  min-width: 10%;
-}
-
-
-
 
 @media (max-width: 600px) {
   .div-icons {
@@ -44,21 +36,23 @@ html {
   }
 }
 
+
+
 .img_principal_p {
-  max-height: 200px;
+  max-height: 100px;
 }
 
 .img_principal_g {
-  max-height: 500px;
+  max-height: 350px;
 }
 
 .div-cartoes {
   padding-bottom: 15px !important;
-
 }
 
 .div-socialmedia i {
   color: var(--cor3);
+  transition: color 0.5s;
 }
 
 .div-b {
@@ -69,24 +63,22 @@ html {
   color: var(--cor2);
 }
 
-.div-socialmedia i {
-  color: var(--cor3);
-  transition: color 0.5s;
-}
-
 footer {
   background-color: var(--cor2);
-  color: var(--cor3);
-  position: fixed;
-  bottom:0;
-    left:0;
-  min-width: 100%;
+  color: var(--cor1);
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 footer i {
   color: var(--cor3);
   justify-self: end;
 }
+
+
 
 #instagram i:hover {
   background-image: linear-gradient(

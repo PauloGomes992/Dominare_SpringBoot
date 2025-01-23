@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg ">
     <div class="container-fluid text topo">
       <div class="logo">
-        <img  th:src="@{img/logo.png}" alt="Logo da Dominara" />
+        <a th:href="@{/}"> <img  th:src="@{img/logo.png}" alt="Logo da Dominara" /></a>
       </div>
 
       <a class="login nav-link d-block d-xl-none d-md-block d-lg-none" href="#"><i
@@ -55,20 +55,20 @@
             <h2>Contrate o Nosso Sistema de Gerenciamento de Condomínios</h2>
             <p>O DOMinare é a solução completa para gerenciar o seu condomínio de maneira simples, eficiente e sem burocracia. Organize finanças, comunicação, manutenção e muito mais em uma plataforma intuitiva e de fácil acesso!</p>
 
-            <div class="beneficios">
-                <div class="beneficio">
+            <div class="beneficios row">
+                <div class="beneficio col-12 col-md-2">
                     <h3>Gestão de Moradores</h3>
                     <p>Controle de todos os apartamentos e moradores do prédio.</p>
                 </div>
-                <div class="beneficio">
+                <div class="beneficio col-12 col-md-2">
                     <h3>Gestão de Visitantes</h3>
                     <p>Tenha o controle de todas as pessoas que entram no prédio.</p>
                 </div>
-                <div class="beneficio">
+                <div class="beneficio col-12 col-md-2">
                     <h3>Quadro de Avisos</h3>
                     <p>Fique atualizado de tudo que acontece no condomínio.</p>
                 </div>
-                <div class="beneficio">
+                <div class="beneficio col-12 col-md-2">
                     <h3>Votação Online</h3>
                     <p>Participe de todas as pautas importantes do condomínio do conforto da sua casa.</p>
                 </div>
@@ -82,20 +82,20 @@
 
             <div class="precos">
                 <h3>Escolha o Plano Ideal para o Seu Condomínio</h3>
-                <div class="planos">
-                    <div class="plano">
+                <div class="planos row">
+                    <div class="plano col-12 col-md-3">
                         <h4>Plano Básico</h4>
                         <p>Ideal para condomínios pequenos. Inclui gestão de finanças, comunicação e relatórios.</p>
                         <p class="preco">R$ 199,90/mês</p>
                         <button class="btn-contratar-plano">Contratar</button>
                     </div>
-                    <div class="plano">
+                    <div class="plano col-12 col-md-3">
                         <h4>Plano Premium</h4>
                         <p>Para condomínios de médio porte. Inclui todos os recursos do Plano Básico + manutenções e controle de documentos.</p>
                         <p class="preco">R$ 399,90/mês</p>
                         <button class="btn-contratar-plano">Contratar</button>
                     </div>
-                    <div class="plano">
+                    <div class="plano col-12 col-md-3">
                         <h4>Plano Empresarial</h4>
                         <p>Plano completo para grandes condomínios. Acesso total a todos os recursos + suporte dedicado.</p>
                         <p class="preco">R$ 699,90/mês</p>
@@ -151,5 +151,8 @@
       fictício sem fins comerciais.
     </p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 </html>
